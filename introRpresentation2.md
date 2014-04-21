@@ -6,7 +6,7 @@ date: April 21, 2014
 Beyond basics
 ========================================================
 
-Now that we know some basics, we'll cover
+Now that we <a href="http://rpubs.com/NateByers/introR" target="_blank">know some basics</a>, we'll cover
 
 - importing data from a spreadsheet
 - data types
@@ -21,10 +21,9 @@ Importing data
 
 - Probably the most common format for data storage is Excel
 - Unfortunately, you can't import Excel files with base R
-- There are [packages][excel] that will do it 
+- There _are_ <a href="http://cran.r-project.org/doc/manuals/r-release/R-data.html#Reading-Excel-spreadsheets" target="_blank">packages</a> that will do it 
 - But the best way to import spreadsheet data is to use the CSV file format
 
-[excel]: http://cran.r-project.org/doc/manuals/r-release/R-data.html#Reading-Excel-spreadsheets
 
 Starting with Excel
 =========================================================
@@ -45,7 +44,7 @@ Read in the file
 data <- read.csv(file = "C:/Documents/mydata.csv")
 ```
 
-- R will assume that the cells in the first row of your spreadsheet contains column headers
+- R will assume that the cells in the first row of your spreadsheet contain column headers
 - The variable `data` will be a data frame
 
 Data types
@@ -66,7 +65,7 @@ Vectors
 type: type: sub-section
 
 - Vectors are variables with ordered, or indexed, values
-- All of the values in a vector are of the same class
+- All of the values in a vector must be the same class
 - Some basic data classes in R are character, integer, numeric, and logical
 
 Vectors
@@ -181,7 +180,7 @@ type: type: sub-section
  
 - Data frames are like matrices, but the difference is that all of the values don't have to have the same class
 - You can think of a column of a data frame as a vector with a certain class
-- The main restriction is that each column has to be of the same length
+- The main restriction is that each column has to be the same length as all the others
 
 Data frames
 =========================================================
@@ -339,4 +338,12 @@ is equivalent to
 ```r
 matrix(1:12, 3)
 ```
+
+
+Part 3
+==========================================================
+- <a href="http://rpubs.com/NateByers/introR3" target="_blank">Part 3</a> of this series explains how to write your own functions, as well as a few more advanced topics
+- These presentations were created using RStudio's <a href="http://www.rstudio.com/ide/docs/presentations/overview?version=0.98.501&mode=desktop" target="_blank">"R Presentations"</a>
+- The code for this presentation can be found here: <a href="https://github.com/NateByers/IntroRpresentation2" target="_blank"> https://github.com/NateByers/IntroRpresentation2</a>
+
 
